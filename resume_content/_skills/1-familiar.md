@@ -1,10 +1,7 @@
 ---
 visible: true
 ---
-- PHP
-- Haskell
-- Racket
-- C
-- C++
+- Go
 - Rust
-- LaTex
+- Python
+- GraphQL

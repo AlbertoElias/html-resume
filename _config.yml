@@ -1,21 +1,18 @@
-title: Html resme
+title: Resume
 logo: /assets/img/logo.png
-description: Christine's HTML resume.
+description: Alberto's resume.
 show_downloads: true
 google_analytics:
-name: Christine Betts
-current_title: Software Engineer
+name: Alberto Elias
+current_title: Software Engineer & Project Manager
 phone_number:
-email_address: me@christinebetts.com
-personal_website: christinebetts.com
-github_url: github.com/chrstnb
-
+email_address: hi@albertoelias.me
+personal_website: albertoelias.me
+github_url: github.com/albertoelias
 collections_dir: resume_content
-
 collections:
   - experience
   - publications
   - awards
-  - education
-  - volunteer_work
+  - projects
   - skills

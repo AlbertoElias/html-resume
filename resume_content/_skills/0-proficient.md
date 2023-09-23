@@ -1,10 +1,7 @@
 ---
 visible: true
 ---
-- Java
-- Hack
-- React
-- GraphQL
 - JavaScript
+- TypeScript
+- React
 - HTML/CSS
-- Python
