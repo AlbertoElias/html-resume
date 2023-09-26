@@ -4,7 +4,7 @@ description: Alberto's resume.
 show_downloads: true
 google_analytics:
 name: Alberto Elias
-current_title: Software Engineer & Project Manager
+current_title: Software Engineer
 phone_number:
 email_address: hi@albertoelias.me
 personal_website: albertoelias.me
@@ -13,6 +13,5 @@ collections_dir: resume_content
 collections:
   - experience
   - publications
-  - awards
   - projects
   - skills

@@ -9,4 +9,4 @@ name: Polygon Hermez
 location: Remote
 ---
 - Adapted quickly to different codebases.
-- Worked closely with a designer during both the design and implementation phases.
+- Met changing client demands in fast-paced environments resolutely.
