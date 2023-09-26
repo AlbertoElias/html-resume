@@ -1,3 +1,21 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-regular/inter-v13-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/inter-regular/inter-v13-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-600/inter-v13-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/inter-600/inter-v13-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
 html {
   display:block;
   padding:.25in;
@@ -34,7 +52,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   line-height: 22px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   color: #000;
   hyphens: auto;
 }
@@ -100,7 +118,7 @@ a {
 
 .section {
   width: calc(var(--main-width) / 2.35);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .title {
@@ -134,7 +152,7 @@ a {
 }
 
 .details > ul {
-  padding-left: 0.15in;
+  padding-left: 16px;
 }
 
 .details p {

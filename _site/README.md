@@ -2,7 +2,8 @@
 
 ## Usage
 
-`bundle exec jekyll serve --livereload`
+Preview: `bundle exec jekyll serve --livereload`
+Build: `bundle exec jekyll build`
 
 ## Customizing
 
