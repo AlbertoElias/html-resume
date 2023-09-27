@@ -16,45 +16,13 @@
        url('./../fonts/Inter-600/inter-v13-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
-html {
-  display:block;
-  padding:.25in;
-  padding-left:.5in;
-}
-
 @page {
-  size: letter portrait;
-  margin: 0;
+  size: A4 portrait;
+  margin: 16px 32px 0;
 }
 
 * {
   box-sizing: border-box;
-}
-
-.decorator {
-  visibility: hidden !important;
-}
-
-
-:root{
-  --gray: #ccc;
-  --page-width: 816px;
-  --page-height: 1008px;
-  --main-width: 8in;
-  --bod-width: 8in;
-  --head-height: 160px;
-}
-
-body {
-  width: var(--page-width);
-  height: var(--page-height);
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  line-height: 22px;
-  letter-spacing: 0.2px;
-  color: #000;
-  hyphens: auto;
 }
 
 h1, h2, h3 {
@@ -82,10 +50,35 @@ a {
   color: black;
 }
 
+:root{
+  --gray: #ccc;
+  --page-width: 768px;
+  --page-height: 1042px;
+  --main-width: 8in;
+  --head-height: 152px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: var(--page-width);
+  height: var(--page-height);
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #000;
+  hyphens: auto;
+}
+
 #main {
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
+  padding: 24px 24px 0;
 }
 
 #head {
@@ -119,6 +112,10 @@ a {
 .section {
   width: calc(var(--main-width) / 2.35);
   margin-bottom: 8px;
+}
+
+.section#experience {
+  margin-bottom: 0;
 }
 
 .title {
