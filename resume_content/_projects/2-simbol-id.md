@@ -1,7 +1,7 @@
 ---
-start_month: 01
+start_month: "01"
 start_year: 2019
-end_month: 02
+end_month: "02"
 end_year: 2020
 name: Simbol Identity
 link: https://github.com/wearesimbol/simbol-identity-manager

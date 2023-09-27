@@ -1,7 +1,7 @@
 ---
-start_month: 02
+start_month: "02"
 start_year: 2016
-end_month: 09
+end_month: "09"
 end_year: 2018
 name: Simbol World
 link: https://github.com/wearesimbol/simbol-world
