@@ -7,7 +7,7 @@
     <title>{{ site.name }}</title>
   </head>
   <body lang="en">
-    <section id="main">
+    <section id="page">
       <header id="head">
         <h1 id="name">{{ site.name }}</h1>
         <h2 id="title">{{ site.current_title }}</h2>
@@ -19,91 +19,96 @@
         </ul>
       </header>
 
-      <main class="body">
+      <main id="main">
 
-        <section class="section" id="experience">
-          <header class="title">
-            <h2>Experience</h2>
-          </header>
-          {% for item in site.experience %}
-            {% if item.visible %}
-              <section class="details">
-                <p class="position">
-                  <span class="job">{{ item.title }}</span>
-                  <span class="date">{{ item.start_month }}.{{ item.start_year }}-{% if item.end_year %}{{ item.end_month }}.{{ item.end_year }}{% endif %}</span>
-                </p>
-                <p class="organization">
-                  <span class="place">{{ item.name }}</span>
-                  <span class="location">{{ item.location }}</span>
-                </p>
-                {{ item.content }}
-              </section>
-            {% endif %}
-          {% endfor %}
-        </section>
-        
-        <section class="section">
-          <header class="title" id="projects">
-            <h2>Projects</h2>
-          </header>
-          {% for item in site.projects %}
-            {% if item.visible %}
-              <section class="details">
-                <p class="position">
-                  <span class="name">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
-                  <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
-                </p>
-                {{ item.content }}
-              </section>
-            {% endif %}
-          {% endfor %}
+        <section class="summary" id="summary">
+          <p>{{ site.summary }}</p>
         </section>
 
-        <section class="section">
-          <header class="title" id="talks">
-            <h2>Publications &amp; Talks</h2>
-          </header>
-          <section class="details">
-            <ul id="publications">
-            {% for item in site.publications %}
+        <div class="columns">
+          <section class="section" id="experience">
+            <header class="title">
+              <h2>Experience</h2>
+            </header>
+            {% for item in site.experience %}
               {% if item.visible %}
-                <li> {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}{% if item.venue %}; {{ item.venue }} {% endif %}</li>
+                <section class="details">
+                  <p class="position">
+                    <span class="job">{{ item.title }}</span>
+                    <span class="date">{{ item.start_month }}.{{ item.start_year }}-{% if item.end_year %}{{ item.end_month }}.{{ item.end_year }}{% else %}Present{% endif %}</span>
+                  </p>
+                  <p class="organization">
+                    <span class="place">{{ item.name }}</span>
+                    <span class="location">{{ item.location }}</span>
+                  </p>
+                  {{ item.content }}
+                </section>
               {% endif %}
             {% endfor %}
-            </ul>
           </section>
-        </section>
-    
-<!--         <section class="title" id="skills">
-          <h2>Skills</h2>
-          <section class="details">
-            <div class="details" id="skillBox">
-              <div class="skill">
-                <h3>Proficient</h3>
-                {{ site.skills[0] }}
-              </div>
-              <div class="skill">
-                <h3>Familiar</h3>
-                {{ site.skills[1] }}
-              </div>
-              <div class="skill">
-                <h3>Tools</h3>
-                {{ site.skills[2] }}
-              </div>
-            </div>
+          
+          <section class="section">
+            <header class="title" id="projects">
+              <h2>Projects</h2>
+            </header>
+            {% for item in site.projects %}
+              {% if item.visible %}
+                <section class="details">
+                  <p class="position">
+                    <span class="name">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
+                    <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
+                  </p>
+                  {{ item.content }}
+                </section>
+              {% endif %}
+            {% endfor %}
           </section>
-        </section>
- -->
-
-        <!-- <section class="section">
-          <header class="title" id="awards">
-            <h2>Selected Awards</h2>
-          </header>
-          <section class="details">
-            {{ site.awards[0] }}
+  
+          <section class="section">
+            <header class="title" id="talks">
+              <h2>Publications &amp; Talks</h2>
+            </header>
+            <section class="details">
+              <ul id="publications">
+              {% for item in site.publications %}
+                {% if item.visible %}
+                  <li> {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}{% if item.venue %}; {{ item.venue }} {% endif %}</li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </section>
           </section>
-        </section> -->
-
+      
+  <!--         <section class="title" id="skills">
+            <h2>Skills</h2>
+            <section class="details">
+              <div class="details" id="skillBox">
+                <div class="skill">
+                  <h3>Proficient</h3>
+                  {{ site.skills[0] }}
+                </div>
+                <div class="skill">
+                  <h3>Familiar</h3>
+                  {{ site.skills[1] }}
+                </div>
+                <div class="skill">
+                  <h3>Tools</h3>
+                  {{ site.skills[2] }}
+                </div>
+              </div>
+            </section>
+          </section>
+   -->
+  
+          <!-- <section class="section">
+            <header class="title" id="awards">
+              <h2>Selected Awards</h2>
+            </header>
+            <section class="details">
+              {{ site.awards[0] }}
+            </section>
+          </section> -->
+        </div>
       </main>
     </section>
   </body>

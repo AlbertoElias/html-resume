@@ -8,9 +8,6 @@ title: Senior Developer
 name: Financial Times
 location: London
 ---
-- Worked on the Origami team where we built a UI component system for all the different FT products.
-- Built all kinds of UI components with a focus on accessibility and extensibility.
-- Built development tools that supported the Origami system.
-- Helped advocate the use of Origami across the FT.
-- Coached interns and junior developers.
-- Promoted from Junior Developer to Senior Developer during my time there.
+- Worked on the Origami team where we built our own component system and dev tools for all the different FT products with a focus on accessibility and extensibility.
+- Used vanilla JavaScript, Sass and node.js to support all stacks at the FT.
+- Advocated to all teams to use Origami including the big ft.com redesign.
