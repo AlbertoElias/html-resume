@@ -56,8 +56,8 @@ a {
   --page-height: 1142px;
   --page-width: 8in;
   --head-height: 144px;
-  --summary-height: 116px;
-  --column-height: 868px;
+  --summary-height: 76px;
+  --column-height: 908px;
 }
 
 html {
