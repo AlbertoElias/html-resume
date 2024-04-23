@@ -10,7 +10,7 @@ email_address: hi@albertoelias.me
 personal_website: albertoelias.me
 github_url: github.com/albertoelias
 summary: >
-  Full-stack developer, project manager, and founder. More than 10 years of experience building complex Web applications. I developed great foundations at the start of my career giving me the flexibility to learn new tools extremely fast. I work best by building great relationships with my peers that result in greater collaboration. I've mixed working at important companies with a lot of responsability, consulting and founding my own projects like Simbol. Always looking to satisfy my curiosity by traveling, meeting people, learning and overall expanding my worldview.
+  Full-stack developer, project manager, and founder. More than 10 years of experience building complex Web applications. I developed great foundations at the start of my career giving me the flexibility to learn new tools extremely fast. I work best by building great relationships with my peers that result in greater collaboration.
 collections_dir: resume_content
 collections:
   - experience
