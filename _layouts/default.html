@@ -21,11 +21,57 @@
 
       <main id="main">
 
-        <section class="summary" id="summary">
+        <!-- <section class="summary" id="summary">
           <p>{{ site.summary }}</p>
-        </section>
+        </section> -->
 
         <div class="columns">
+          <section class="section">
+            <header class="title">
+              <h2>About Me</h2>
+            </header>
+            {% for item in site.about %}
+              {% if item.visible %}
+                {{ item.content }}
+              {% endif %}
+            {% endfor %}
+          </section>
+          
+          <section class="section">
+            <header class="title" id="projects">
+              <h2>Projects</h2>
+            </header>
+            {% for item in site.projects %}
+              {% if item.visible %}
+                <section class="details">
+                  <p class="position">
+                    <span class="job">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
+                    <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
+                  </p>
+                  {{ item.content }}
+                </section>
+              {% endif %}
+            {% endfor %}
+          </section>
+  
+          <section class="section">
+            <header class="title" id="talks">
+              <h2>Publications &amp; Talks</h2>
+            </header>
+            <section class="details">
+              <ul id="publications">
+              {% for item in site.publications %}
+                {% if item.visible %}
+                  <li>
+                    <p class="position">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %} </p>
+                    {% if item.venue %}<p class="organization">{{ item.venue }}</p>{% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+            </section>
+          </section>
+
           <section class="section" id="experience">
             <header class="title">
               <h2>Experience</h2>
@@ -45,38 +91,6 @@
                 </section>
               {% endif %}
             {% endfor %}
-          </section>
-          
-          <section class="section">
-            <header class="title" id="projects">
-              <h2>Projects</h2>
-            </header>
-            {% for item in site.projects %}
-              {% if item.visible %}
-                <section class="details">
-                  <p class="position">
-                    <span class="name">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
-                    <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
-                  </p>
-                  {{ item.content }}
-                </section>
-              {% endif %}
-            {% endfor %}
-          </section>
-  
-          <section class="section">
-            <header class="title" id="talks">
-              <h2>Publications &amp; Talks</h2>
-            </header>
-            <section class="details">
-              <ul id="publications">
-              {% for item in site.publications %}
-                {% if item.visible %}
-                  <li> {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}{% if item.venue %}; {{ item.venue }} {% endif %}</li>
-                {% endif %}
-              {% endfor %}
-              </ul>
-            </section>
           </section>
       
   <!--         <section class="title" id="skills">
