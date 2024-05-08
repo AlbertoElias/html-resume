@@ -18,7 +18,7 @@
 
 @page {
   size: A4 portrait;
-  margin: 16px 32px 0;
+  margin: 32px 48px 0;
 }
 
 * {
@@ -64,7 +64,7 @@ a {
   --page-width: 8in;
   --head-height: 144px;
   --summary-height: 0;
-  --column-height: 984px;
+  --column-height: 944px;
 }
 
 html {
@@ -94,10 +94,6 @@ body {
     width: 210mm; /* A4 width */
     height: 297mm; /* A4 height */
     font-size: 9pt; /* Smaller font size for printing */
-  }
-
-  #page {
-    padding: 2mm; /* Adjust margins as needed */
   }
 }
 
