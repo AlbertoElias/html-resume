@@ -26,13 +26,34 @@
         </section> -->
 
         <div class="columns">
-          <section class="section">
+          <section class="section section-left">
             <header class="title">
               <h2>About Me</h2>
             </header>
             {% for item in site.about %}
               {% if item.visible %}
                 {{ item.content }}
+              {% endif %}
+            {% endfor %}
+          </section>
+
+          <section class="section section-left" id="experience">
+            <header class="title">
+              <h2>Experience</h2>
+            </header>
+            {% for item in site.experience %}
+              {% if item.visible %}
+                <section class="details">
+                  <p class="position">
+                    <span class="job">{{ item.title }}</span>
+                    <span class="date">{{ item.start_month }}.{{ item.start_year }}-{% if item.end_year %}{{ item.end_month }}.{{ item.end_year }}{% else %}Present{% endif %}</span>
+                  </p>
+                  <p class="organization">
+                    <span class="place">{{ item.name }}</span>
+                    <span class="location">{{ item.location }}</span>
+                  </p>
+                  {{ item.content }}
+                </section>
               {% endif %}
             {% endfor %}
           </section>
@@ -70,27 +91,6 @@
               {% endfor %}
               </ul>
             </section>
-          </section>
-
-          <section class="section" id="experience">
-            <header class="title">
-              <h2>Experience</h2>
-            </header>
-            {% for item in site.experience %}
-              {% if item.visible %}
-                <section class="details">
-                  <p class="position">
-                    <span class="job">{{ item.title }}</span>
-                    <span class="date">{{ item.start_month }}.{{ item.start_year }}-{% if item.end_year %}{{ item.end_month }}.{{ item.end_year }}{% else %}Present{% endif %}</span>
-                  </p>
-                  <p class="organization">
-                    <span class="place">{{ item.name }}</span>
-                    <span class="location">{{ item.location }}</span>
-                  </p>
-                  {{ item.content }}
-                </section>
-              {% endif %}
-            {% endfor %}
           </section>
       
   <!--         <section class="title" id="skills">

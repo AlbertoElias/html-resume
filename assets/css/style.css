@@ -147,9 +147,12 @@ body {
   width: calc(var(--page-width) / 2.6);
 }
 
+.columns > *:nth-child(-n+2) {
+  width: calc(var(--page-width) / 2);
+}
+
 .columns > *:last-child {
   margin-bottom: 0;
-  width: calc(var(--page-width) / 2);
 }
 
 .title {
