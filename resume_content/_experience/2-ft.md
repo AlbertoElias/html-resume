@@ -10,4 +10,4 @@ location: London
 ---
 - Worked on the Origami team where we built our own component system and dev tools for all the different FT products with a focus on accessibility and extensibility.
 - Used vanilla JavaScript, Sass and node.js to support all stacks at the FT.
-- Advocated to all teams to use Origami including the big ft.com redesign.
+- Advocated Origami throughout the company including the big ft.com redesign.
