@@ -7,6 +7,7 @@ end_year: 2014
 title: Young Advisor
 name: Neelie Kroes, VP European Commission
 location: Brussels
+next_column: true
 ---
 - Helped create EU Code Week, an initiative to promote coding throughout Europe.
 - Advised on different initiatives to promote entrepreneurship and innovation in Europe.

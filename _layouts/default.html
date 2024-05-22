@@ -26,7 +26,7 @@
         </section> -->
 
         <div class="columns">
-          <section class="section section-left">
+          <!-- <section class="section"> -->
             <header class="title">
               <h2>About Me</h2>
             </header>
@@ -35,15 +35,15 @@
                 {{ item.content }}
               {% endif %}
             {% endfor %}
-          </section>
+          <!-- </section> -->
 
-          <section class="section section-left" id="experience">
+          <!-- <section class="section" id="experience"> -->
             <header class="title">
               <h2>Experience</h2>
             </header>
             {% for item in site.experience %}
               {% if item.visible %}
-                <section class="details">
+                <section class="details{% if item.next_column %} details--next-column{% endif %}">
                   <p class="position">
                     <span class="job">{{ item.title }}</span>
                     <span class="date">{{ item.start_month }}.{{ item.start_year }}-{% if item.end_year %}{{ item.end_month }}.{{ item.end_year }}{% else %}Present{% endif %}</span>
@@ -56,9 +56,9 @@
                 </section>
               {% endif %}
             {% endfor %}
-          </section>
+          <!-- </section> -->
           
-          <section class="section">
+          <!-- <section class="section"> -->
             <header class="title" id="projects">
               <h2>Projects</h2>
             </header>
@@ -73,9 +73,9 @@
                 </section>
               {% endif %}
             {% endfor %}
-          </section>
+          <!-- </section> -->
   
-          <section class="section">
+          <!-- <section class="section"> -->
             <header class="title" id="talks">
               <h2>Publications &amp; Talks</h2>
             </header>
@@ -91,7 +91,7 @@
               {% endfor %}
               </ul>
             </section>
-          </section>
+          <!-- </section> -->
       
   <!--         <section class="title" id="skills">
             <h2>Skills</h2>
