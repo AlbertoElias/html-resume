@@ -1,5 +1,5 @@
 ---
-visible: true
+visible: false
 year: 2023
 title: "What will Whatsapp look like in VR?"
 venue: Substack

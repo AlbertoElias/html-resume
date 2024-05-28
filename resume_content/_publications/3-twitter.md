@@ -1,5 +1,5 @@
 ---
-visible: true
+visible: false
 year: 2023
 title: "Twitter won't be killed by Elon or by a clone"
 venue: Substack
