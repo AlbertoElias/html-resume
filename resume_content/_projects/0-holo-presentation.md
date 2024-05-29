@@ -4,4 +4,4 @@ name: Holo Presentation
 link: http://holo-presentation.vercel.app/
 visible: true
 ---
-A prototype for presentations native to 3D environments.
+Prototype to create and view slides in VR/AR. Built with A-Frame.
