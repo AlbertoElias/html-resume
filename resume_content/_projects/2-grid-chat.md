@@ -4,4 +4,4 @@ name: Grid Chat
 link: https://github.com/AlbertoElias/grid-chat
 visible: true
 ---
-A chat application that uses a 2D grid to display messages to give conversations a spatial context. Built with React, TypeScript, and PostgreSQL.
+Chat application that uses a 2D grid to  give conversations a spatial context. Heavily optimized grid with 10,000 tiles. React, TypeScript, and PostgreSQL.
