@@ -60,21 +60,23 @@
             <header class="title" id="projects">
               <h2>Projects</h2>
             </header>
-            {% for item in site.projects %}
-              {% if item.visible %}
-                <section class="details">
-                  <p class="position">
-                    <span class="job">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
-                    <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
-                  </p>
-                  {{ item.content }}
-                </section>
-              {% endif %}
-            {% endfor %}
+            <div class="projects">
+              {% for item in site.projects %}
+                {% if item.visible %}
+                  <section class="project">
+                    <p class="position">
+                      <span class="job">{% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}{{ item.name }}{% if item.link %}</a>{% endif %}</span>
+                      <span class="date">{{ item.start_month }}{% if item.start_month %}.{% endif %}{{item.start_year}}{% if item.end_year %}-{% endif %}{{ item.end_month }}{% if item.start_month %}.{% endif %}{{item.end_year}}</span>
+                    </p>
+                    {{ item.content }}
+                  </section>
+                {% endif %}
+              {% endfor %}
+            </div>
           <!-- </section> -->
   
           <!-- <section class="section"> -->
-            <header class="title" id="talks">
+            <!-- <header class="title" id="talks">
               <h2>Publications &amp; Talks</h2>
             </header>
             <section class="details">
@@ -88,38 +90,24 @@
                 {% endif %}
               {% endfor %}
               </ul>
-            </section>
+            </section> -->
           <!-- </section> -->
       
-  <!--         <section class="title" id="skills">
-            <h2>Skills</h2>
-            <section class="details">
-              <div class="details" id="skillBox">
-                <div class="skill">
-                  <h3>Proficient</h3>
-                  {{ site.skills[0] }}
-                </div>
-                <div class="skill">
-                  <h3>Familiar</h3>
-                  {{ site.skills[1] }}
-                </div>
-                <div class="skill">
-                  <h3>Tools</h3>
-                  {{ site.skills[2] }}
-                </div>
-              </div>
-            </section>
-          </section>
-   -->
-  
-          <!-- <section class="section">
-            <header class="title" id="awards">
-              <h2>Selected Awards</h2>
+          <!-- <section class="title" id="skills"> -->
+            <header class="title">
+              <h2>Skills</h2>
             </header>
-            <section class="details">
-              {{ site.awards[0] }}
+            <section class="skills">
+              {% for item in site.skills %}
+                {% if item.visible %}
+                  <p class="skill">
+                    <span class="skill-name">{{ item.name }}:</span>
+                    {{ item.skills }}
+                  </p>
+                {% endif %}
+              {% endfor %}
             </section>
-          </section> -->
+          <!-- </section> -->
         </div>
       </main>
     </section>
