@@ -64,7 +64,7 @@ a {
   --page-width: 8in;
   --head-height: 70px;
   --summary-height: 0;
-  --column-height: 260px;
+  --column-height: 240px;
   font-size: 12px;
 }
 
@@ -90,6 +90,10 @@ body {
 }
 
 @media print {
+  :root {
+    --column-height: 220px;
+  }
+
   body {
     width: 210mm; /* A4 width */
     height: 297mm; /* A4 height */
@@ -150,7 +154,7 @@ header#head > * {
 }
 
 .columns > * {
-  width: calc(50% - 12px);
+  width: calc(50% - 1rem);
 }
 
 /* .columns > *:nth-child(-n+2) {
